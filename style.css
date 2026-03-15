@@ -122,8 +122,13 @@
   right: auto;
 }
 
+.home-cards {
+  flex-wrap: wrap;
+}
+
 .home-cards .card {
-  width: 30%;
+  flex: 0 0 calc((100% - 2rem) / 3);
+  width: auto;
 }
 
 .modal-dialog {
@@ -296,7 +301,7 @@
 
 @media (max-width: 990px) {
   .home-cards .card {
-    flex-basis: 100%;
+    flex: 0 0 100%;
   }
 }
 
