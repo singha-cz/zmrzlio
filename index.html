@@ -30,14 +30,15 @@ chuť bez chemie. "
     <link rel="icon" href="favicon.ico">
   </head>
   <body class="home">
-    <site-header></site-header>
+    <site-header role="navigation"></site-header>
     <script type="module" src="/components/header-component.js"></script>
     <!-- Carousel -->
-    <div class="container">
+    <div class="container" role="banner">
       <div
         id="mainCarousel"
         class="carousel slide carousel-fade min-vh-50"
         data-bs-ride="carousel"
+
       >
         <div class="carousel-indicators">
           <button
@@ -95,6 +96,7 @@ chuť bez chemie. "
           type="button"
           data-bs-target="#mainCarousel"
           data-bs-slide="prev"
+          aria-label="Předchozí"
         >
           <span class="carousel-control-prev-icon"></span>
         </button>
@@ -103,6 +105,7 @@ chuť bez chemie. "
           type="button"
           data-bs-target="#mainCarousel"
           data-bs-slide="next"
+          aria-label="Následující"
         >
           <span class="carousel-control-next-icon"></span>
         </button>
@@ -110,7 +113,7 @@ chuť bez chemie. "
     </div>
 
     <!-- Obsah stránky -->
-    <div class="container my-5">
+    <div class="container my-5" role="main">
       <h1 class="text-center" id="offer">Zmrzku nebo svařák? Zmrzku!</h1>
 
       <div
@@ -283,13 +286,10 @@ chuť bez chemie. "
       </div>
     </div>
 
-    <iframe
-      src="/components/footer.html"
-      style="width: 100%"
-      id="footer"
-      class="footer-iframe"
-      title="Footer"
-    ></iframe>
+    <footer class="bg-primary text-light text-center py-3 mt-5">
+      <h2>Pohlazení na jazyku</h2>
+      <small>&copy; 2025 | <a href="../index.html" target="_parent" class="text-light">Zmrzlio.cz</a> | <a href="../about-us.html" target="_parent" class="text-light">Více o nás</a></small>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

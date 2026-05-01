@@ -30,11 +30,11 @@ naše receptury."
     gtag("config", "G-4N68DDE13J");
   </script>
   <body>
-    <site-header></site-header>
+    <site-header role="navigation"></site-header>
     <script type="module" src="/components/header-component.js"></script>
 
     <!-- Obsah -->
-    <div class="container my-5">
+    <div class="container my-5" role="main">
       <!-- Úvod -->
       <div class="text-center mb-5">
         <h1 class="display-4 fw-bold mb-3">O nás</h1>
@@ -170,20 +170,27 @@ naše receptury."
           <p class="lead mb-4">
             Rádi odpovíme na vaše dotazy a pozveme vás na ochutnávku.
           </p>
-          <a href="contact.html" class="btn btn-light btn-lg shadow">
+          <a href="./contact.html" class="btn btn-light btn-lg shadow">
             <i class="bi bi-envelope-fill me-2"></i>Spojte se s námi
           </a>
         </div>
       </div>
     </div>
 
-    <iframe
-      src="/components/footer.html"
-      style="width: 100%; overflow: hidden"
-      id="footer"
-      class="footer-iframe"
-      title="Footer"
-    ></iframe>
+    <footer class="bg-primary text-light text-center py-3 mt-5">
+      <h2>Pohlazení na jazyku</h2>
+      <small
+        >&copy; 2025 |
+        <a href="../index.html" target="_parent" class="text-light"
+          >Zmrzlio.cz</a
+        >
+        |
+        <a href="../about-us.html" target="_parent" class="text-light"
+          >Více o nás</a
+        >
+        | 703 00 Ostrava, Karamelová 16/25
+      </small>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

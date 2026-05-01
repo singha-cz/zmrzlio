@@ -33,10 +33,10 @@ návštěvu. "
     gtag("config", "G-4N68DDE13J");
   </script>
   <body>
-    <site-header></site-header>
+    <site-header role="navigation"></site-header>
     <script type="module" src="/components/header-component.js"></script>
 
-    <div class="container my-5">
+    <div class="container my-5" role="main">
       <h1>Napište nám…</h1>
       <form class="row g-3">
         <div class="col-md-6">
@@ -112,12 +112,19 @@ návštěvu. "
       </form>
     </div>
 
-    <iframe
-      src="/components/footer.html"
-      style="width: 100%; height: 100%"
-      id="footer"
-      title="Footer"
-    ></iframe>
+    <footer class="bg-primary text-light text-center py-3 mt-5">
+      <h2>Pohlazení na jazyku</h2>
+      <small
+        >&copy; 2025 |
+        <a href="../index.html" target="_parent" class="text-light"
+          >Zmrzlio.cz</a
+        >
+        |
+        <a href="../about-us.html" target="_parent" class="text-light"
+          >Více o nás</a
+        ></small
+      >
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

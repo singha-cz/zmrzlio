@@ -37,11 +37,11 @@ Používáme pouze kvalitní ovoce a smetanu."
     gtag("config", "G-4N68DDE13J");
   </script>
   <body class="offer">
-    <site-header></site-header>
+    <site-header role="navigation"></site-header>
     <script type="module" src="/components/header-component.js"></script>
 
     <!-- Tabulka -->
-    <div class="container my-5">
+    <div class="container my-5" role="main">
       <h1>Naše zmrzliny</h1>
       <div class="table-responsive">
         <table
@@ -1060,14 +1060,27 @@ Používáme pouze kvalitní ovoce a smetanu."
           </tbody>
         </table>
       </div>
+      <hr>
+      <p class="pt-4 text-center">
+        Pro lepší představu o tom, jak lákavě naše zmrzliny ve skutečnosti
+        vypadají, vás zveme do naší
+        <a href="./gallery.html">zmrzlinové galerie</a>.
+      </p>
     </div>
 
-    <iframe
-      src="/components/footer.html"
-      style="width: 100%; height: 100%"
-      id="footer"
-      title="Footer"
-    ></iframe>
+    <footer class="bg-primary text-light text-center py-3 mt-5">
+      <h2>Pohlazení na jazyku</h2>
+      <small
+        >&copy; 2025 |
+        <a href="../index.html" target="_parent" class="text-light"
+          >Zmrzlio.cz</a
+        >
+        |
+        <a href="../about-us.html" target="_parent" class="text-light"
+          >Více o nás</a
+        ></small
+      >
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

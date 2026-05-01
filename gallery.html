@@ -79,11 +79,11 @@ atmosféru Zmrzlio ještě před návštěvou. "
     gtag("config", "G-4N68DDE13J");
   </script>
   <body>
-    <site-header></site-header>
+    <site-header role="navigation"></site-header>
     <script type="module" src="/components/header-component.js"></script>
 
     <!-- Galerie -->
-    <div class="container my-5">
+    <div class="container my-5" role="main">
       <h1 class="mb-4">Nech se inspirovat</h1>
       <div class="row g-4">
         <!-- Řádek 1 -->
@@ -248,7 +248,11 @@ atmosféru Zmrzlio ještě před návštěvou. "
         </div>
 
         <p class="pt-4 text-center">
-         Podělte se s námi o svou radost. <a href="./contact.html">Napište nám</a>, kterou zmrzlinu máte nejradši! A hned potom si zajděte na <a href="./blog.html" target="_blank">náš blog</a> přečíst nejnovější články o čem - no o zmrzlinách!
+          Podělte se s námi o svou radost.
+          <a href="./contact.html">Napište nám</a>, kterou zmrzlinu máte
+          nejradši! A hned potom si zajděte na
+          <a href="./blog.html">náš blog</a> přečíst nejnovější články o čem -
+          no o zmrzlinách!
         </p>
       </div>
     </div>
@@ -277,12 +281,19 @@ atmosféru Zmrzlio ještě před návštěvou. "
       </div>
     </div>
 
-    <iframe
-      src="/components/footer.html"
-      style="width: 100%; height: 100%"
-      id="footer"
-      title="Footer"
-    ></iframe>
+    <footer class="bg-primary text-light text-center py-3 mt-5">
+      <h2>Pohlazení na jazyku</h2>
+      <small
+        >&copy; 2025 |
+        <a href="../index.html" target="_parent" class="text-light"
+          >Zmrzlio.cz</a
+        >
+        |
+        <a href="../about-us.html" target="_parent" class="text-light"
+          >Více o nás</a
+        ></small
+      >
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
