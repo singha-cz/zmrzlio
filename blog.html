@@ -11,24 +11,19 @@ aktuality z naší řemeslné výroby. "
     >
     <title>Blog | Zmrzlio</title>
     <link href="/themes/lux-bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link
+      href="style.css"
+      rel="preload"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    >
+    <noscript><link href="style.css" rel="stylesheet"></noscript>
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-4N68DDE13J"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-4N68DDE13J");
-  </script>
   <body class="blog">
-    <site-header role="navigation"></site-header>
+    <site-header></site-header>
     <script type="module" src="/components/header-component.js"></script>
 
     <div class="container my-5" role="main">
@@ -39,6 +34,9 @@ aktuality z naší řemeslné výroby. "
         <div class="row g-0">
           <div class="col-md-6">
             <img
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
               src="./assets/images/pexels-1.jpeg"
               class="img-fluid rounded-start h-100 object-fit-cover"
               alt="Čokoládový zmrzlinový kornout v horkém létě"
@@ -82,6 +80,8 @@ aktuality z naší řemeslné výroby. "
             <div class="row g-0">
               <div class="col-md-4 overflow-hidden">
                 <img
+                  loading="lazy"
+                  decoding="async"
                   src="./assets/images/pexels-2.jpeg"
                   class="img-fluid rounded-start"
                   alt="Čokoládová poleva"
@@ -120,6 +120,8 @@ aktuality z naší řemeslné výroby. "
             <div class="row g-0">
               <div class="col-md-4 overflow-hidden">
                 <img
+                  loading="lazy"
+                  decoding="async"
                   src="./assets/images/pexels-4.jpeg"
                   class="img-fluid rounded-start"
                   alt="Čerstvé ovoce na zmrzlinu"
@@ -158,6 +160,8 @@ aktuality z naší řemeslné výroby. "
             <div class="row g-0">
               <div class="col-md-4 overflow-hidden">
                 <img
+                  loading="lazy"
+                  decoding="async"
                   src="./assets/images/pexels-6.jpeg"
                   class="img-fluid rounded-start"
                   alt="Barevné cukrové posypy"
@@ -196,6 +200,8 @@ aktuality z naší řemeslné výroby. "
             <div class="row g-0">
               <div class="col-md-4 overflow-hidden">
                 <img
+                  loading="lazy"
+                  decoding="async"
                   src="./assets/images/pexels-7.jpeg"
                   class="img-fluid rounded-start"
                   alt="Nanuky v mrazáku"
@@ -233,7 +239,7 @@ aktuality z naší řemeslné výroby. "
       <p class="pt-4 text-center">
         Máte dotazy nebo nápady na další články?
         <a href="./contact.html">Napište nám</a>! Pokud jste dostali chuť na
-        zmrzku, <a href="./blog.html">vyberte si</a> z naší bohaté a pestré
+        zmrzku, <a href="./offer.html">vyberte si</a> z naší bohaté a pestré
         nabídky. Pro potěšení očí můžete navštívit naši
         <a href="./gallery.html">galerii zmrzlin</a>.
       </p>
@@ -243,16 +249,29 @@ aktuality z naší řemeslné výroby. "
       <h2>Pohlazení na jazyku</h2>
       <small
         >&copy; 2025 |
-        <a href="../index.html" target="_parent" class="text-light"
+        <a href="./index.html" target="_parent" class="text-light"
           >Zmrzlio.cz</a
         >
         |
-        <a href="../about-us.html" target="_parent" class="text-light"
+        <a href="./about-us.html" target="_parent" class="text-light"
           >Více o nás</a
         ></small
       >
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4N68DDE13J"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-4N68DDE13J");
+    </script>
   </body>
 </html>

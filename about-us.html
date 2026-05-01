@@ -12,25 +12,20 @@ naše receptury."
     >
     <title>O nás | Zmrzlio</title>
     <link href="/themes/lux-bootstrap.min.css" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet">
+    <link
+      href="./style.css"
+      rel="preload"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    >
+    <noscript><link href="./style.css" rel="stylesheet"></noscript>
     <link rel="icon" href="favicon.ico">
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-4N68DDE13J"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-4N68DDE13J");
-  </script>
   <body>
-    <site-header role="navigation"></site-header>
+    <site-header></site-header>
     <script type="module" src="/components/header-component.js"></script>
 
     <!-- Obsah -->
@@ -181,11 +176,11 @@ naše receptury."
       <h2>Pohlazení na jazyku</h2>
       <small
         >&copy; 2025 |
-        <a href="../index.html" target="_parent" class="text-light"
+        <a href="./index.html" target="_parent" class="text-light"
           >Zmrzlio.cz</a
         >
         |
-        <a href="../about-us.html" target="_parent" class="text-light"
+        <a href="./about-us.html" target="_parent" class="text-light"
           >Více o nás</a
         >
         | 703 00 Ostrava, Karamelová 16/25
@@ -193,5 +188,18 @@ naše receptury."
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4N68DDE13J"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-4N68DDE13J");
+    </script>
   </body>
 </html>

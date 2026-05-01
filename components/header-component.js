@@ -2,10 +2,17 @@ class SiteHeader extends HTMLElement {
   connectedCallback() {
     if (!document.querySelector("link[data-bootstrap-icons]")) {
       const bi = document.createElement("link");
-      bi.rel = "stylesheet";
+      bi.rel = "preload";
+      bi.as = "style";
       bi.href =
         "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css";
       bi.setAttribute("data-bootstrap-icons", "true");
+      bi.onload = () => {
+        bi.rel = "stylesheet";
+      };
+      bi.onerror = () => {
+        bi.rel = "stylesheet";
+      };
       document.head.appendChild(bi);
     }
 
