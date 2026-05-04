@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "auggie": {
+      "type": "stdio",
+      "command": "auggie",
+      "args": ["--mcp", "--mcp-auto-workspace"]
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest", "--browser", "msedge"]
+    }
+  }
+}
