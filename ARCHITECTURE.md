@@ -11,10 +11,6 @@
 
 Každá je samostatný HTML soubor.
 
-## Inline critical CSS
-
-Blok `<style>` na začátku každé stránky obsahuje inlinovaný critical CSS generovaný skriptem `scripts/generate-critical-css.mjs`. Plný stylesheet (`themes/lux-bootstrap.min.css`) se pak načítá neblokujícím způsobem přes `media="print" onload="this.media='all'"`. Bloky `<style>` neupravuj ručně — jsou přegenerovány příkazem `npm run build:critical`.
-
 ## Sdílená hlavička
 
 Navigace a breadcrumbs jsou implementovány jako Web Component (`<site-header>`) definovaná v [components/header-component.js](components/header-component.js). Každá stránka ji načítá přes `<script type="module" src="/components/header-component.js">`. Komponenta vkládá HTML, řeší mobilní collapse bez Bootstrap JS a dynamicky aktualizuje breadcrumbs podle `window.location.hash`.
