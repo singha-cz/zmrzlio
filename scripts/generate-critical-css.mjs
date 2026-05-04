@@ -11,7 +11,9 @@ function stripFontImport(file) {
   writeFileSync(file, html, 'utf-8');
 }
 
-const files = globSync('*.html');
+const files = globSync('*.html').filter(f =>
+  readFileSync(f, 'utf-8').includes('<html')
+);
 
 async function run() {
   for (const file of files) {
