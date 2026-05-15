@@ -1,6 +1,11 @@
 {
+  "scripts": {
+    "build:critical": "node scripts/generate-critical-css.mjs"
+  },
   "devDependencies": {
     "@awmottaz/prettier-plugin-void-html": "^2.1.0",
+    "critical": "^7.2.1",
+    "glob": "^13.0.6",
     "prettier": "^3.8.1"
   }
 }
