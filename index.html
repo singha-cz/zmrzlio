@@ -3,18 +3,51 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/pexels-piriyonel-3176321-4875225.webp"
+      fetchpriority="high"
+    >
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link
+      rel="preload"
+      as="style"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+      data-bootstrap-icons="true"
+      onload="this.rel = 'stylesheet'"
+    >
+    <!-- prettier-ignore -->
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"></noscript>
+    <style>
+      :root {
+        --bs-gradient: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.15),
+          rgba(255, 255, 255, 0)
+        );
+      }
+      .btn {
+        --bs-btn-focus-box-shadow: 0 0 0 0.25rem
+          rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
+      }
+      .card {
+        --bs-card-inner-border-radius: calc(
+          var(--bs-border-radius) - (var(--bs-border-width))
+        );
+      }
+    </style>
+    <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&amp;display=swap"
       media="print"
       onload="this.media = 'all'"
     >
     <!-- prettier-ignore -->
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap"></noscript>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&amp;display=swap"></noscript>
     <meta
       name="description"
       content="Vítejte ve světě Zmrzlio. Vyrábíme poctivou 
@@ -24,7 +57,6 @@ chuť bez chemie. "
     >
     <title>Zmrzlio - Řemeslná zmrzlina k nezaplacení!</title>
     <style>
-      @charset "UTF-8";
       :root {
         --bs-blue: #007bff;
         --bs-indigo: #6610f2;

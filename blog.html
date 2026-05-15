@@ -4,28 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap"
-      media="print"
-      onload="this.media = 'all'"
+      rel="preload"
+      as="style"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+      data-bootstrap-icons="true"
+      onload="this.rel = 'stylesheet'"
     >
-    <noscript
-      ><link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap"
-      >
-    /></noscript>
-    <meta
-      name="description"
-      content="Články ze světa zmrzliny. Tipy na domácí 
-sorbety, zajímavosti o surovinách a 
-aktuality z naší řemeslné výroby. "
-    >
-    <title>Blog | Zmrzlio</title>
+    <!-- prettier-ignore -->
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"></noscript>
     <style>
       @charset "UTF-8";
       h1,
@@ -400,12 +390,6 @@ aktuality z naší řemeslné výroby. "
         --bs-btn-disabled-bg: #1a1a1a;
         --bs-btn-disabled-border-color: #1a1a1a;
       }
-      .btn-sm {
-        --bs-btn-padding-y: 0.5rem;
-        --bs-btn-padding-x: 1rem;
-        --bs-btn-font-size: 0.875rem;
-        --bs-btn-border-radius: var(--bs-border-radius-sm);
-      }
       .card {
         --bs-card-spacer-y: 1rem;
         --bs-card-spacer-x: 1rem;
@@ -553,9 +537,6 @@ aktuality z naší řemeslné výroby. "
         font-size: 0.875rem;
         text-transform: uppercase;
       }
-      .btn-sm {
-        font-size: 10px;
-      }
       .btn-primary {
         --bs-btn-hover-bg: #000;
         --bs-btn-hover-border-color: #000;
@@ -578,23 +559,26 @@ aktuality z naší řemeslné výroby. "
       .card h3 {
         color: inherit;
       }
-      :root {
-        --bs-breadcrumb-bg: none;
-        --bs-nav-tabs-link-active-border-color: black;
-      }
-      @media (max-width: 768px) {
-        .blog a.btn {
-          width: 100%;
-          font-size: 14px;
-        }
-      }
     </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&amp;display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    >
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&amp;display=swap"
+      >
+    </noscript>
     <link
       href="/themes/lux-bootstrap.min.css"
       rel="stylesheet"
       media="print"
       onload="this.media = 'all'"
     >
+    <link rel="icon" href="favicon.ico">
   </head>
   <body class="blog">
     <site-header></site-header>
@@ -861,7 +845,7 @@ aktuality z naší řemeslné výroby. "
       gtag("config", "G-4N68DDE13J");
     </script>
     <noscript
-      ><link href="/themes/lux-bootstrap.min.css" rel="stylesheet">
-    /></noscript>
+      ><link href="/themes/lux-bootstrap.min.css" rel="stylesheet"> /></noscript
+    >
   </body>
 </html>
